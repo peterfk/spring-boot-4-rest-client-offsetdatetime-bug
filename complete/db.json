@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "JSON-Server",
+      "author": "Amit"
+    },
+    {
+      "id": 2,
+      "title": "Node.js",
+      "author": "Mohit"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "Great post!",
+      "postId": 1,
+      "createdAt": "2026-04-19T08:30:00-04:00"
+    },
+    {
+      "id": 2,
+      "body": "Informative!",
+      "postId": 2,
+      "createdAt": "2026-04-19T08:30:00-04:00"
+    }
+  ],
+  "profile": {
+    "name": "Amit Kumar"
+  }
+}
