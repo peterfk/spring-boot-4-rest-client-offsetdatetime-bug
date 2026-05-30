@@ -16,15 +16,15 @@ import tools.jackson.databind.json.JsonMapper;
 @Configuration
 public class JacksonConfig {
 
-    @Bean
-    @Primary
-    public ObjectMapper objectMapper() {
-        return JsonMapper.builder()
-            .disable(DateTimeFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
-            .disable(DateTimeFeature.WRITE_DATES_WITH_CONTEXT_TIME_ZONE)
-            .disable(DateTimeFeature.WRITE_DATES_AS_TIMESTAMPS)
-            .build();
-    }
+//    @Bean
+//    @Primary
+//    public ObjectMapper myObjectMapper() {
+//        return JsonMapper.builder()
+//            .disable(DateTimeFeature.ADJUST_DATES_TO_CONTEXT_TIME_ZONE)
+//            .disable(DateTimeFeature.WRITE_DATES_WITH_CONTEXT_TIME_ZONE)
+//            .disable(DateTimeFeature.WRITE_DATES_AS_TIMESTAMPS)
+//            .build();
+//    }
 }
 
 
