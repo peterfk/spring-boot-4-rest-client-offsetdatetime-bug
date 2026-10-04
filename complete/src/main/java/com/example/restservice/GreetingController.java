@@ -65,11 +65,11 @@ public class GreetingController {
 
     @PostConstruct
     public void init() {
-        System.out.println("Mapper class: " + mapper.getClass().getName());
-        System.out.println("Mapper config: " + mapper.serializationConfig());
-        System.out.println("Deserialization config: " + mapper.deserializationConfig());
-        System.out.println("Serialization config: " + mapper);
-        SerializationConfig config = mapper.serializationConfig();
+//        System.out.println("Mapper class: " + mapper.getClass().getName());
+//        System.out.println("Mapper config: " + mapper.serializationConfig());
+//        System.out.println("Deserialization config: " + mapper.deserializationConfig());
+//        System.out.println("Serialization config: " + mapper);
+//        SerializationConfig config = mapper.serializationConfig();
         DeserializationConfig deserializationConfig = mapper.deserializationConfig();
         DatatypeFeatures datatypeFeatures = deserializationConfig.getDatatypeFeatures();
 //        datatypeFeatures.forEach((key, value) -> System.out.println(key + " : " + value));

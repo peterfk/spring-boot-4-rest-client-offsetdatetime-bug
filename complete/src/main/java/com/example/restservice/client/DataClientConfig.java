@@ -5,14 +5,13 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.support.RestClientAdapter;
 import org.springframework.web.service.invoker.HttpServiceProxyFactory;
-import tools.jackson.databind.ObjectMapper;
 
 @Configuration
 public class DataClientConfig {
 
     @Bean
-    public DataClient dataClient2() {
-        RestClient restClient = RestClient.builder()
+    public DataClient dataClient(RestClient.Builder restClientBuilder) {
+        RestClient restClient = restClientBuilder
             .baseUrl("http://localhost:3000")
             .build();
 

@@ -2,7 +2,6 @@ package com.example.restservice;
 
 import com.example.restservice.client.DataRecord;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClient;
 
@@ -11,8 +10,8 @@ public class DataController {
 
     private final RestClient restClient;
 
-    public DataController() {
-        this.restClient = RestClient.builder()
+    public DataController(RestClient.Builder restClientBuilder) {
+        this.restClient = restClientBuilder
             .baseUrl("http://localhost:3000")
             .build();
     }
