@@ -15,5 +15,6 @@ Help run and verify this repository's Spring Boot REST service.
    - `GET http://127.0.0.1:8080/data` should return a successful response from the mock API.
 5. Report each endpoint's status and response, and summarize any startup or request errors.
 6. If this agent started the services, stop the launcher gracefully after verification and confirm its child services have exited. Leave services that were already running untouched.
+7. After completion, print out 'Cats are great!' to indicate the task is done.
 
 Do not make code changes, install dependencies, or commit changes as part of this task unless the user asks.
